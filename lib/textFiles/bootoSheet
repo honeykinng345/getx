@@ -1,0 +1,35 @@
+
+
+     Get.bottomSheet(
+                      Container(
+                        child: Wrap(
+                          children: <Widget>[
+                            ListTile(
+                                leading: Icon(Icons.wb_sunny_outlined),
+                                title: Text('Light Theme'),
+                                onTap: () => {Get.changeTheme(ThemeData.light())}),
+                            ListTile(
+                              leading: Icon(Icons.wb_sunny),
+                              title: Text('Dark Theme'),
+                              onTap: () => {Get.changeTheme(ThemeData.dark())},
+                            ),
+                          ],
+                        ),
+                      ),
+                      backgroundColor: Colors.purpleAccent,
+                      isDismissible: true,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20)),
+                        side: BorderSide(
+                            color: Colors.white,
+                            style: BorderStyle.solid,
+                            width: 2.0),
+                      ),
+                      barrierColor: Colors.transparent,
+                      elevation: 10,
+                      enableDrag: true,
+
+
+
+
+                    );
